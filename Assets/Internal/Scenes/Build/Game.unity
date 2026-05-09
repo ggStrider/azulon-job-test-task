@@ -261,6 +261,8 @@ MonoBehaviour:
   _clickButton: {fileID: 677008048}
   _floatingTextPrefab: {fileID: -72828755792751264, guid: 23aa3f04dc61a079fb9ee38592bf4139, type: 3}
   _floatingTextSpawnPoint: {fileID: 1764155429}
+  _defaultPoolSize: 5
+  _maxPoolSize: 20
 --- !u!1 &441494084
 GameObject:
   m_ObjectHideFlags: 0
