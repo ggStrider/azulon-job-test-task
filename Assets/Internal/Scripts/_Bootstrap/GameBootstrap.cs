@@ -22,7 +22,7 @@ namespace Internal.Scripts._Bootstrap
             var currencyService = new CurrencyService();
             var inventory = new PlayerInventory();
             var clickService = new ClickService(currencyService, inventory);
-            var shopService = new ShopService(currencyService, inventory, clickService);
+            var shopService = new ShopService(currencyService, inventory);
             var passiveIncome = new PassiveIncomeService(currencyService, inventory);
 
             ServiceLocator.Register<ICurrencyService>(to: currencyService);
