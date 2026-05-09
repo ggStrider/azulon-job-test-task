@@ -1,8 +1,8 @@
 using Internal.Scripts._Bootstrap.Locator;
-
 using Internal.Scripts.Core.Data.Inventory;
 using Internal.Scripts.Features.Click;
 using Internal.Scripts.Features.Currency;
+using Internal.Scripts.Features.Shop;
 using UnityEngine;
 
 namespace Internal.Scripts._Bootstrap
@@ -15,10 +15,12 @@ namespace Internal.Scripts._Bootstrap
             var currencyService = new CurrencyService();
             var inventory = new PlayerInventory();
             var clickService = new ClickService(currencyService, inventory);
+            var shopService = new ShopService(currencyService, inventory, clickService);
 
-            ServiceLocator.Register<ICurrencyService>(currencyService);
-            ServiceLocator.Register<IInventory>(inventory);
-            ServiceLocator.Register<IClickService>(clickService);
+            ServiceLocator.Register<ICurrencyService>(to: currencyService);
+            ServiceLocator.Register<IInventory>(to: inventory);
+            ServiceLocator.Register<IClickService>(to: clickService);
+            ServiceLocator.Register<IShopService>(to: shopService);
         }
     }
 }

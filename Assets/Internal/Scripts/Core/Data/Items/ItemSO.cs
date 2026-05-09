@@ -11,7 +11,8 @@ namespace Internal.Scripts.Core.Data.Items
         [field: Space, TextArea(2, 4)]
         [field: SerializeField] public string Description { get; private set; }
 
-        [field: Space, Min(1)]
-        [field: SerializeField] public int ClickBonus { get; private set; } = 1;
+        [field: Space]
+        [field: SerializeField, Min(1)] public int Price { get; private set; } = 1;
+        [field: SerializeField, Min(1)] public int ClickBonus { get; private set; } = 1;
     }
 }
