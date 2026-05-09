@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d657258df6c9e9c28b9a44dbaf3199a9, type: 3}
+  m_Name: Red Potion
+  m_EditorClassIdentifier: Assembly-CSharp::Internal.Scripts.Core.Data.Items.ItemSO
+  <Name>k__BackingField: Red Potion
+  <Icon>k__BackingField: {fileID: -8485995304713028149, guid: 5a9c927b6bc4f2b1bb827f8365fcc62a, type: 3}
+  <Description>k__BackingField: This potion looks cool, and red
+  <Price>k__BackingField: 10
+  <ClickBonus>k__BackingField: 3
