@@ -32,7 +32,7 @@ namespace Internal.Scripts.Features.Click
         {
             var total = BASE_CLICK_VALUE;
 
-            foreach (var slot in _inventory.Items)
+            foreach (var slot in _inventory.Items.AsReadOnly())
             {
                 if (slot == null) continue;
                 total += slot.Item.ClickBonus * slot.Amount;
