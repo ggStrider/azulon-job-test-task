@@ -44,6 +44,17 @@ namespace Internal.Scripts.Core.Data.Inventory
             return true;
         }
 
+        public bool CanAdd(ItemSO item, int amount = 1)
+        {
+            if (TryGetExisting(item, out _))
+                return true;
+
+            if (TryGetFreeSlot(out _))
+                return true;
+
+            return false;
+        }
+
         public bool TryRemove(ItemSO item, int amount = 1)
         {
             if (!TryGetExisting(item, out var existing))

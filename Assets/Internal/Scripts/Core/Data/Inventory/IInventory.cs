@@ -12,6 +12,7 @@ namespace Internal.Scripts.Core.Data.Inventory
         public IReadOnlyList<InventoryItem> Items { get; }
     
         public bool TryAdd(ItemSO item, int amount = 1);
+        public bool CanAdd(ItemSO item, int amount = 1);
         public bool TryRemove(ItemSO item, int amount = 1);
         public bool Contains(ItemSO item, int amount = 1);
     }
