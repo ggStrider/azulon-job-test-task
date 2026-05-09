@@ -1,10 +1,9 @@
-using System;
 using Internal.Scripts._Bootstrap.Locator;
 using Internal.Scripts.Features.Click;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Internal.Scripts.Features.UI.Views
+namespace Internal.Scripts.Features.UI.Views.Click
 {
     public class ClickAddCurrencyView : MonoBehaviour
     {
