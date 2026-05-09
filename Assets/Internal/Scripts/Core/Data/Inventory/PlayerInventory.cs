@@ -31,19 +31,17 @@ namespace Internal.Scripts.Core.Data.Inventory
 
         public bool TryAdd(ItemSO item, int amount = 1)
         {
-            if (TryGetExisting(item, out var existing, out _))
+            if (TryGetExisting(item, out var existing, out var index))
             {
                 existing.AddAmount(amount);
-                var index = _items.IndexOf(existing);
-                _items.SetValue(index, existing);
-                
+                _items.SetValue(index, existing, force: true);
                 return true;
             }
 
             if (!TryGetFreeSlot(out var freeSlot))
                 return false;
 
-            _items.SetValue(freeSlot, new InventoryItem(item, amount));
+            _items.SetValue(freeSlot, new InventoryItem(item, amount), force: true);
             return true;
         }
 
@@ -65,9 +63,9 @@ namespace Internal.Scripts.Core.Data.Inventory
             existing.RemoveAmount(amount);
 
             if (existing.Amount <= 0)
-                _items.SetValue(index, null);
+                _items.SetValue(index, null, force: true);
             else
-                _items.SetValue(index, existing);
+                _items.SetValue(index, existing, force: true);
 
             return true;
         }
