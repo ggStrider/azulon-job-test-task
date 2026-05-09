@@ -40,6 +40,8 @@ namespace Internal.Scripts._Bootstrap
         {
             ServiceLocator.Get<IPassiveIncomeService>().Dispose();
             ServiceLocator.Get<IClickService>().Dispose();
+            
+            ServiceLocator.Clear();
         }
     }
 }
