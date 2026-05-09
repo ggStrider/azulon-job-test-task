@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d657258df6c9e9c28b9a44dbaf3199a9, type: 3}
-  m_Name: Blue Potion
+  m_Name: Knife
   m_EditorClassIdentifier: Assembly-CSharp::Internal.Scripts.Core.Data.Items.ItemSO
-  <Name>k__BackingField: Blue Potion
-  <Icon>k__BackingField: {fileID: -7118549172432436139, guid: 5a9c927b6bc4f2b1bb827f8365fcc62a, type: 3}
-  <Description>k__BackingField: This potion is not cool as red. Looks like decent
-    potion...
-  <Price>k__BackingField: 1
-  <ClickBonus>k__BackingField: 1
+  <Name>k__BackingField: Knife
+  <Icon>k__BackingField: {fileID: 1042398586, guid: 5a9c927b6bc4f2b1bb827f8365fcc62a, type: 3}
+  <Description>k__BackingField: 'I wonder what this item even do
+
+    +3 per second'
+  <Price>k__BackingField: 15
+  <ClickBonus>k__BackingField: 0
+  <PassiveIncomePerSecond>k__BackingField: 3

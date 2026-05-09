@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d657258df6c9e9c28b9a44dbaf3199a9, type: 3}
+  m_Name: Super
+  m_EditorClassIdentifier: Assembly-CSharp::Internal.Scripts.Core.Data.Items.ItemSO
+  <Name>k__BackingField: S
+  <Icon>k__BackingField: {fileID: 2013792173, guid: 5a9c927b6bc4f2b1bb827f8365fcc62a, type: 3}
+  <Description>k__BackingField: 'Is this supposed to be ''Super'' or what?
+
+    Gives
+    +3 click bonus
+
+    +5 per second'
+  <Price>k__BackingField: 50
+  <ClickBonus>k__BackingField: 3
+  <PassiveIncomePerSecond>k__BackingField: 5
