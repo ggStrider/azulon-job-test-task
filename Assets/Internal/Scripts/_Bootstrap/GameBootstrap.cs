@@ -1,3 +1,4 @@
+using System;
 using Internal.Scripts._Bootstrap.Locator;
 using Internal.Scripts._Bootstrap.Tick;
 using Internal.Scripts.Core.Data.Inventory;
@@ -33,6 +34,12 @@ namespace Internal.Scripts._Bootstrap
             _tickableRunner.Register(passiveIncome);
 
             ServiceLocator.Register<AvailableItemsSO>(to: _availableItems);
+        }
+
+        private void OnDestroy()
+        {
+            ServiceLocator.Get<IPassiveIncomeService>().Dispose();
+            ServiceLocator.Get<IClickService>().Dispose();
         }
     }
 }

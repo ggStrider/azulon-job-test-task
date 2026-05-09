@@ -24,6 +24,14 @@ namespace Internal.Scripts.Features.PassiveIncome
             
             Recalculate();
         }
+        
+        public void Dispose()
+        {
+            if (_inventory != null)
+            {
+                _inventory.Items.OnListChanged -= Recalculate;
+            }
+        }
 
         public void Recalculate()
         {

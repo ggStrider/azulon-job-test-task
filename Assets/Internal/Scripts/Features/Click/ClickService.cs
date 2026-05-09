@@ -19,8 +19,17 @@ namespace Internal.Scripts.Features.Click
         {
             _currencyService = currencyService;
             _inventory = inventory;
-
+            
+            _inventory.Items.OnListChanged += RecalculateClickValue;
             RecalculateClickValue();
+        }
+        
+        public void Dispose()
+        {
+            if (_inventory != null)
+            {
+                _inventory.Items.OnListChanged -= RecalculateClickValue;
+            }
         }
 
         public void Click()
